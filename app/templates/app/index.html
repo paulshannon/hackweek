@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Realtime Flight Alerting</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="{% static 'app/css/index.css' %}"/>
+
+    {# https://jquery.com/#}
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+
+    {# https://github.com/joewalnes/reconnecting-websocket #}
+    <script src="{% static 'js/reconnecting-websocket.min.js' %}"></script>
+
+    {# http://leafletjs.com/ #}
+    <script src="{% static 'js/leaflet/leaflet.js' %}"></script>
+
+    {# https://github.com/bbecquet/Leaflet.RotatedMarker #}
+    <script src="{% static 'js/leaflet.rotatedMarker.js' %}"></script>
+
+    {# https://github.com/mlevans/leaflet-hash #}
+    <script src="{% static 'js/leaflet.hash.js' %}"></script>
+
+    <script src="{% static 'app/js/WebsocketWrapper.js' %}"></script>
+    <script src="{% static 'app/js/Map.js' %}"></script>
+    <script src="{% static 'app/js/application.js' %}"></script>
+
+</head>
+<body>
+<div id='map'></div>
+</body>
+
+</html>
